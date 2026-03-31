@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cerrajero a Domicilio 24 Horas - Apertura de vehículos sin daño. Autos, motos y camiones. Llegamos en 20-30 minutos. ¡Llama ahora! +51 940 310 456">
+    <meta name="keywords" content="cerrajero 24 horas, apertura de vehículos, cerrajero automotriz, emergencia vehicular, cerrajero a domicilio, llaves perdidas">
+    <meta name="author" content="Cerrajero a Domicilio 24H">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cerrajero a Domicilio 24 Horas | Apertura de Vehículos">
+    <meta property="og:description" content="¿Quedaste fuera de tu vehículo? Llegamos en 20-30 minutos. Servicio 24/7 sin daño a tu vehículo.">
+    <meta property="og:type" content="website">
+    <meta property="og:phone" content="+51940310456">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Cerrajero a Domicilio 24 Horas",
+        "telephone": "+51940310456",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "serviceType": "Cerrajería Automotriz",
+        "areaServed": "Perú",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Cerrajería",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Apertura de Autos"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Apertura de Motos"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Apertura de Camiones"}}
+            ]
+        }
+    }
+    </script>
+    
+    <title>Cerrajero a Domicilio 24 Horas | Apertura de Vehículos - +51 940 310 456</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f97316',
+                        accent: '#fbbf24',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'slide-in': 'slideIn 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.3s ease-in'
+                    },
+                    keyframes: {
+                        slideIn: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e40af 100%);
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: pulse-slow 2s infinite;
+        }
+        
+        .call-sticky {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .call-sticky {
+                display: flex;
+            }
+        }
+        
+        .availability-indicator {
+            position: relative;
+        }
+        
+        .availability-indicator::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #22c55e;
+            border-radius: 50%;
+            top: -2px;
+            right: -2px;
+            animation: pulse-slow 2s infinite;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            font-size: 28px;
+            margin: 0 auto 16px;
+        }
+        
+        .step-number {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .trust-badge {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid #0ea5e9;
+        }
+        
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+        
+        .form-input {
+            transition: all 0.3s ease;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .form-input:focus {
+            border-color: #1e40af;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f97316;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .stats-counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .scroll-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slide-in 0.3s ease-out;
+        }
+        
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #f97316;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-dark">Cerrajero 24H</h1>
+                        <p class="text-xs text-gray-500">A Domicilio</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-primary font-medium">Inicio</a>
+                    <a href="#servicios" class="nav-link text-gray-700 hover:text-primary font-medium">Servicios</a>
+                    <a href="#proceso" class="nav-link text-gray-700 hover:text-primary font-medium">Proceso</a>
+                    <a href="#cobertura" class="nav-link text-gray-700 hover:text-primary font-medium">Cobertura</a>
+                    <a href="#testimonios" class="nav-link text-gray-700 hover:text-primary font-medium">Testimonios</a>
+                    <a href="#faq" class="nav-link text-gray-700 hover:text-primary font-medium">FAQ</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden lg:flex items-center space-x-2 availability-indicator">
+                        <span class="text-sm font-medium text-green-600">Técnicos disponibles</span>
+                    </div>
+                    <a href="tel:+51940310456" class="btn-primary text-white px-6 py-3 rounded-xl font-bold flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>Llamar Ahora</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center gradient-bg overflow-hidden">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <img src="https://image.qwenlm.ai/public_source/d48b38da-663f-463e-b41d-bf9168138871/15de09554-ef8c-4d39-b7aa-effc9c11e1c1.png" alt="Cerrajero profesional trabajando" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-8 animate-slide-in">
+                    <div class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                        <span class="w-3 h-3 bg-green-400 rounded-full availability-indicator"></span>
+                        <span class="text-sm font-medium">Servicio 24 Horas Garantizado</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                        ¿Quedaste Fuera de tu Vehículo?
+                        <span class="text-accent block mt-2">Llegamos en 20-30 Minutos</span>
+                    </h1>
+                    
+                    <p class="text-xl text-blue-100 max-w-lg">
+                        Cerrajero especializado en apertura de vehículos sin daño. Autos, motos y camiones. Técnicos certificados disponibles 24/7.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+51940310456" class="btn-primary text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>LLAMAR: +51 940 310 456</span>
+                        </a>
+                        <a href="https://wa.me/51940310456" class="btn-whatsapp text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span class="text-sm">Sin daño al vehículo</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-sm">Técnicos certificados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-accent/30 rounded-3xl transform rotate-6"></div>
+                        <img src="https://image.qwenlm.ai/public_source/d48b38da-663f-463e-b41d-bf9168138871/1ba85706c-caad-48b3-becf-351ebb58743e.png" alt="Llave y cerradura automotriz" class="relative rounded-3xl shadow-2xl w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white shadow-lg -mt-8 relative z-20 mx-4 lg:mx-20 rounded-2xl">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-primary stats-counter" id="stat1">2500+</div>
+                    <div class="text-gray-600 mt-2">Vehículos Atendidos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-primary stats-counter" id="stat2">24/7</div>
+                    <div class="text-gray-600 mt-2">Disponibilidad</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-primary stats-counter" id="stat3">30min</div>
+                    <div class="text-gray-600 mt-2">Tiempo Promedio</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-primary stats-counter" id="stat4">100%</div>
+                    <div class="text-gray-600 mt-2">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Especialistas en apertura de todo tipo de vehículos sin causar daños</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Apertura de Autos</h3>
+                    <p class="text-gray-600 text-center">Todas las marcas y modelos. Llaves perdidas, cerraduras dañadas, sistemas electrónicos.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Apertura de Motos</h3>
+                    <p class="text-gray-600 text-center">Motocicletas, scooters y quads. Dirección bloqueada, switch dañado, llaves extraviadas.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Apertura de Camiones</h3>
+                    <p class="text-gray-600 text-center">Vehículos comerciales y de carga. Cabinas, cajas de seguridad y sistemas especializados.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Llaves Electrónicas</h3>
+                    <p class="text-gray-600 text-center">Programación y duplicado de llaves con chip, controles remotos y sistemas keyless.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Cerraduras Dañadas</h3>
+                    <p class="text-gray-600 text-center">Reparación y reemplazo de cilindros, bombines y mecanismos de seguridad vehicular.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3 text-center">Emergencia en Ruta</h3>
+                    <p class="text-gray-600 text-center">Atención en cualquier ubicación. Carreteras, estacionamientos, domicilios y más.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">¿Por Qué Elegirnos?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ventajas competitivas que nos diferencian</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="trust-badge rounded-2xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2">Servicio 24/7 Real</h3>
+                    <p class="text-gray-600 text-sm">Disponibles todos los días del año, incluyendo feriados</p>
+                </div>
+                
+                <div class="trust-badge rounded-2xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2">Sin Daño Garantizado</h3>
+                    <p class="text-gray-600 text-sm">Técnicas profesionales que no dañan tu vehículo</p>
+                </div>
+                
+                <div class="trust-badge rounded-2xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2">Precios Competitivos</h3>
+                    <p class="text-gray-600 text-sm">Tarifas transparentes sin costos ocultos</p>
+                </div>
+                
+                <div class="trust-badge rounded-2xl p-6 text-center card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-dark mb-2">Técnicos Certificados</h3>
+                    <p class="text-gray-600 text-sm">Personal capacitado y con experiencia verificada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Proceso Simple y Rápido</h2>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">Tres pasos para solucionar tu emergencia</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="step-number mx-auto mb-6 text-2xl">1</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Llamas</h3>
+                    <p class="text-blue-100">Contáctanos por teléfono o WhatsApp. Cuéntanos tu situación y ubicación exacta.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="step-number mx-auto mb-6 text-2xl">2</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Llegamos</h3>
+                    <p class="text-blue-100">Nuestro técnico más cercano llega en 20-30 minutos a tu ubicación.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="step-number mx-auto mb-6 text-2xl">3</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Solucionamos</h3>
+                    <p class="text-blue-100">Apertura sin daño de tu vehículo. Pagas solo cuando el servicio está completado.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="tel:+51940310456" class="btn-primary text-white px-10 py-5 rounded-xl font-bold text-xl inline-flex items-center space-x-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>INICIAR EMERGENCIA AHORA</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section id="cobertura" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">Zonas de Cobertura</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Atendemos en toda el área metropolitana y alrededores</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="map-container bg-white p-6 shadow-lg">
+                    <div class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="w-20 h-20 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <p class="text-gray-600 font-medium">Cobertura en todo Lima y Callao</p>
+                            <p class="text-sm text-gray-500 mt-2">Y zonas aledañas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl p-4 shadow-md flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-dark">Lima Metropolitana</span>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-md flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-dark">Callao</span>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-md flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-dark">San Isidro, Miraflores, Surco</span>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-md flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-dark">La Molina, San Borja</span>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 shadow-md flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="font-medium text-dark">Y más distritos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Reseñas verificadas de personas reales</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Me quedé fuera de mi auto a las 2 AM. Llegaron en 25 minutos y abrieron sin ningún daño. ¡Excelente servicio!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">C</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-dark">Carlos M.</p>
+                            <p class="text-sm text-gray-500">Miraflores</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Perdí las llaves de mi moto en el centro. Muy profesionales y el precio fue justo. Los recomiendo 100%."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white font-bold">L</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-dark">Luisa R.</p>
+                            <p class="text-sm text-gray-500">San Isidro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card rounded-2xl p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Servicio rápido y confiable. Mi camioneta quedó como nueva después de la apertura. Muy agradecido."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">J</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-dark">Jorge P.</p>
+                            <p class="text-sm text-gray-500">Surco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-dark mb-4">Preguntas Frecuentes</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Resolvemos tus dudas antes de llamar</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span class="font-bold text-dark">¿Cuánto tiempo tardan en llegar?</span>
+                        <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Nuestro tiempo promedio de llegada es de 20-30 minutos dependiendo de tu ubicación y el tráfico. Contamos con técnicos distribuidos estratégicamente para responder rápidamente.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span class="font-bold text-dark">¿Dañan mi vehículo al abrir?</span>
+                        <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">No. Utilizamos técnicas profesionales y herramientas especializadas que permiten abrir tu vehículo sin causar ningún daño a la pintura, cerradura o sistema electrónico.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span class="font-bold text-dark">¿Qué tipos de vehículos atienden?</span>
+                        <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Atendemos todo tipo de vehículos: autos (todas las marcas y modelos), motos, scooters, camiones, furgonetas y vehículos comerciales. También trabajamos con sistemas electrónicos y llaves con chip.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span class="font-bold text-dark">¿Cuál es el costo del servicio?</span>
+                        <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">El costo varía según el tipo de vehículo, la ubicación y la complejidad del trabajo. Te damos un presupuesto claro por teléfono antes de enviar al técnico. Aceptamos efectivo, Yape, Plin y tarjetas.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span class="font-bold text-dark">¿Atienden feriados y domingos?</span>
+                        <svg class="w-5 h-5 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Sí, nuestro servicio es 24/7 los 365 días del año, incluyendo domingos y feriados. Las emergencias no tienen horario y nosotros tampoco.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Form Section -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-extrabold text-dark mb-2">Solicitud de Emergencia</h2>
+                    <p class="text-gray-600">Completa el formulario y te contactaremos inmediatamente</p>
+                </div>
+                
+                <form id="emergencyForm" class="space-y-6" onsubmit="submitForm(event)">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
+                            <input type="text" name="nombre" required class="form-input w-full px-4 py-3 rounded-xl" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                            <input type="tel" name="telefono" required class="form-input w-full px-4 py-3 rounded-xl" placeholder="+51 9XX XXX XXX">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Ubicación Exacta</label>
+                        <input type="text" name="ubicacion" required class="form-input w-full px-4 py-3 rounded-xl" placeholder="Distrito, calle, referencia">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de Vehículo</label>
+                        <select name="vehiculo" required class="form-input w-full px-4 py-3 rounded-xl">
+                            <option value="">Selecciona una opción</option>
+                            <option value="auto">Auto / Automóvil</option>
+                            <option value="moto">Moto / Motocicleta</option>
+                            <option value="camion">Camión / Furgoneta</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Descripción del Problema</label>
+                        <textarea name="descripcion" rows="3" class="form-input w-full px-4 py-3 rounded-xl" placeholder="Llaves perdidas, cerradura dañada, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center space-x-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                        <span>ENVIAR SOLICITUD</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Cerrajero 24H</h3>
+                            <p class="text-sm text-gray-400">A Domicilio</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Servicio profesional de cerrajería automotriz las 24 horas del día, los 7 días de la semana.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Apertura de Autos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Apertura de Motos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Llaves Electrónicas</a></li>
+                        <li><a href="#" class="hover:text-white transition">Emergencia 24/7</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="tel:+51940310456" class="hover:text-white transition">+51 940 310 456</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <a href="https://wa.me/51940310456" class="hover:text-white transition">WhatsApp</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:contacto@cerrajero24h.pe" class="hover:text-white transition">contacto@cerrajero24h.pe</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Horario</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <div class="flex justify-between">
+                            <span>Lunes - Viernes</span>
+                            <span class="text-white">24 Horas</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Sábado</span>
+                            <span class="text-white">24 Horas</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Domingo</span>
+                            <span class="text-white">24 Horas</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Feriados</span>
+                            <span class="text-white">24 Horas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 Cerrajero a Domicilio 24H. Todos los derechos reservados.</p>
+                    <div class="flex space-x-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-white transition">Política de Privacidad</a>
+                        <a href="#" class="hover:text-white transition">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51940310456" class="whatsapp-fixed btn-whatsapp text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl whatsapp-float" target="_blank" rel="noopener">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="scroll-top bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center" onclick="scrollToTop()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Sticky Call Bar -->
+    <div class="call-sticky bg-white shadow-2xl">
+        <a href="tel:+51940310456" class="btn-primary text-white px-6 py-4 flex items-center justify-center space-x-3 w-full">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span class="font-bold text-lg">LLAMAR: +51 940 310 456</span>
+        </a>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content p-8 text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-dark mb-2">¡Solicitud Enviada!</h3>
+            <p class="text-gray-600 mb-6">Nos contactaremos contigo en los próximos minutos. Mientras tanto, puedes llamar directamente.</p>
+            <a href="tel:+51940310456" class="btn-primary text-white px-8 py-3 rounded-xl font-bold inline-flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <span>Llamar Ahora</span>
+            </a>
+            <button onclick="closeModal()" class="mt-4 text-gray-500 hover:text-dark">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Form Submission
+        function submitForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loading-spinner"></div>';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                document.getElementById('successModal').classList.add('active');
+                form.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        }
+
+        // Close Modal
+        function closeModal() {
+            document.getElementById('successModal').classList.remove('active');
+        }
+
+        // Close modal on outside click
+        document.getElementById('successModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Scroll to Top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/Hide Scroll Button
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Animate stats on scroll
+        function animateStats() {
+            const stats = document.querySelectorAll('.stats-counter');
+            stats.forEach(stat => {
+                const text = stat.textContent;
+                // Simple animation - in production, use a proper counter library
+                stat.style.opacity = '0';
+                setTimeout(() => {
+                    stat.style.transition = 'opacity 0.5s ease';
+                    stat.style.opacity = '1';
+                }, 100);
+            });
+        }
+
+        // Trigger stats animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelector('#inicio + section').querySelectorAll('.stats-counter').forEach(stat => {
+            observer.observe(stat);
+        });
+
+        // Track phone clicks for Google Analytics
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'Contact',
+                        'event_label': 'Phone Call',
+                        'value': this.href
+                    });
+                }
+            });
+        });
+
+        // Track WhatsApp clicks
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'click', {
+                        'event_category': 'Contact',
+                        'event_label': 'WhatsApp',
+                        'value': this.href
+                    });
+                }
+            });
+        });
+
+        // Form submission tracking
+        function trackFormSubmission() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'submit', {
+                    'event_category': 'Form',
+                    'event_label': 'Emergency Form',
+                    'value': 1
+                });
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add any initialization code here
+            console.log('Cerrajero 24H Website Loaded');
+        });
+    </script>
+</body>
+</html>
+
